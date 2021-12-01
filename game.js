@@ -25,19 +25,19 @@ $(".btn").click(function () {
 function playSound(color) {
   switch (color) {
     case "red":
-      var redAudio = new Audio("sounds/red.mp3");
+      var redAudio = new Audio("red.mp3");
       redAudio.play();
       break;
     case "blue":
-      var blueAudio = new Audio("sounds/blue.mp3");
+      var blueAudio = new Audio("blue.mp3");
       blueAudio.play();
       break;
     case "yellow":
-      var yellowAudio = new Audio("sounds/yellow.mp3");
+      var yellowAudio = new Audio("yellow.mp3");
       yellowAudio.play();
       break;
     case "green":
-      var greenAudio = new Audio("sounds/green.mp3");
+      var greenAudio = new Audio("green.mp3");
       greenAudio.play();
       break;
 
@@ -56,7 +56,7 @@ function checkAnswer(currentLevel) {
       }, 1000);
     }
   } else {
-    var wrongAudio = new Audio("sounds/wrong.mp3");
+    var wrongAudio = new Audio("wrong.mp3");
     wrongAudio.play();
     console.log("wrong");
     $("body").addClass("game-over");
