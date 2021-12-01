@@ -7,7 +7,7 @@ var level = 0;
 $(document).keypress(function () {
   if (started == false) {
     $("h1").text("Level " + level);
-    $("h1").css("color","green");
+    $("h1").css("color","lightgreen");
     nextSequence();
     started = true;
   }
