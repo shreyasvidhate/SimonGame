@@ -4,14 +4,7 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).click(function () {
-  if (started == false) {
-    $("h1").text("Level " + level);
-    $("h1").css("color","lightgreen");
-    nextSequence();
-    started = true;
-  }
-});
+
 
 $(document).keypress(function () {
   if (started == false) {
